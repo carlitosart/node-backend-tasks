@@ -30,7 +30,7 @@ Content-Type: application/json
 DELETE http://localhost:3000/tasks/1
 
 ### Status change to Completed
-PUT http://localhost:3000/tasks/1?status=COMPLETED
+PUT http://localhost:3000/tasks/2?status=COMPLETED
 
 ### Status change to pending
-PUT http://localhost:3000/tasks/1?status=PENDING
+PUT http://localhost:3000/tasks/2?status=PENDING
