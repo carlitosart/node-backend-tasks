@@ -1,11 +1,11 @@
   
-### Invoke Servidor
+### Servidor
 GET http://localhost:3000/
 
-### Get all of tasks
+### Get Tasks
 GET http://localhost:3000/tasks
 
-### Get a task by ID
+### Get a Task by ID
 GET http://localhost:3000/tasks/1
 
 ### Create a task
@@ -13,20 +13,20 @@ POST http://localhost:3000/tasks
 Content-Type: application/json
 
 {
-    "title": "Completar primera evaluacion",
-    "detail": "Instalar Sakila y practicar consultas"
+    "title": "Primera Tarea",
+    "detail": "Test1"
 }
 
-### Update a Task
+### Update Task
 PUT http://localhost:3000/tasks/1
 Content-Type: application/json
 
 {
-    "title": "Task Updated",
-    "detail": "Detail Updated"
+    "title": "Tarea Actualizada",
+    "detail": "Test1Act"
 }
 
-### Delete a Task
+### Delete Task
 DELETE http://localhost:3000/tasks/1
 
 ### Status change to Completed

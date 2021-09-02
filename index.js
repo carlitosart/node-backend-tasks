@@ -1,21 +1,14 @@
-//https://stackoverflow.com/questions/9177049/express-js-req-body-undefined
-
 var express = require("express");
 var bodyParser = require('body-parser')
 var jsonParser = bodyParser.json()
-var app = express();
-var port = 3000;
 
-//Data Array
-var tasks = []
-
-//Counter
 var counterId = 1;
 var auxi = 0;
 
-//Invoke servidor
+var app = express();
+var tasks = []
 app.get("/", (req, res, next) => {
-    res.send("Servidor is running");
+    res.send("Servidor TAREAS OK");
 });
 
 //List all of Tasks
@@ -80,6 +73,6 @@ app.put('/tasks/:id', jsonParser, (req, res, next) => {
 });
 
 //Servidor Listening
-app.listen(port, () => {
-    console.log("HTTP Servidor is check");
+app.listen(3000, () => {
+    console.log("Sevidor Corriendo :)");
 });
